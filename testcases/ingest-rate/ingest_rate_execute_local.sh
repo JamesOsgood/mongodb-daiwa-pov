@@ -1,1 +1,0 @@
-java -jar bin/POCDriver.jar -c "mongodb://localhost:27017/test" -t 4 -e -d 600 -f 5 --depth 2 -x 3 -n 'lg_perf.test_coll'

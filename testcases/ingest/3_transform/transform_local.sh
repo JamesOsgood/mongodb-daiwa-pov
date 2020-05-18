@@ -1,1 +1,0 @@
-. ./transform.sh localhost:27017/lg

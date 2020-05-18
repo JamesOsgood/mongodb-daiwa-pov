@@ -1,1 +1,0 @@
-. ./run_test.sh mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg

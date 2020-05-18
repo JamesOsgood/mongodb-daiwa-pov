@@ -1,1 +1,1 @@
-. ./stage.sh localhost:27017/lg
+. ./stage.sh localhost:27017/daiwaCM

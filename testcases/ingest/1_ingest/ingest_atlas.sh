@@ -1,8 +1,16 @@
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.address --file /Users/james/data/mongodb/LG/MONGODB_ADDRESS.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.code_value --file /Users/james/data/mongodb/LG/MONGODB_CODE_VALUE.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.contract --file /Users/james/data/mongodb/LG/MONGODB_CONTRACT.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.email --file /Users/james/data/mongodb/LG/MONGODB_EMAIL.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.person_address --file /Users/james/data/mongodb/LG/MONGODB_PERSON_ADDRESS.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.person_contract --file /Users/james/data/mongodb/LG/MONGODB_PERSON_CONTRACT.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.person --file /Users/james/data/mongodb/LG/MONGODB_PERSON.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
-/usr/local/m/versions/4.2.1-ent/bin/mongoimport --type=csv --headerline --parseGrace=skipField --drop -c raw.phone_number --file /Users/james/data/mongodb/LG/MONGODB_PHONE_NUMBER.csv --uri mongodb+srv://lg:2DRHWbUq1mjWOqwq@lg-pov-kmf0t.mongodb.net/lg 
+MONGODB_URI=mongodb+srv://daiwatest:vzLtMB9qpWDA9Cmv@daiwatest-ifxxs.mongodb.net/daiwaCM
+MONGOIMPORT=/usr/local/m/versions/4.2.1-ent/bin/mongoimport
+DATA_DIR=/Users/james/Downloads/Dataset-DCME
+
+$MONGOIMPORT --collection users --drop --type JSON --file $DATA_DIR/mongoUsers13942526411415162384.txt --uri $MONGODB_URI
+
+$MONGOIMPORT --collection trades --drop --type JSON --file $DATA_DIR/mongoTrades15246162398814616722.txt --uri $MONGODB_URI
+
+$MONGOIMPORT --collection securities --drop --type JSON --file $DATA_DIR/mongoSecurities5661706666748333823.txt --uri $MONGODB_URI
+
+$MONGOIMPORT --collection orgs --drop --type JSON --file $DATA_DIR/mongoOrgs8593877481785797051.txt --uri $MONGODB_URI
+
+$MONGOIMPORT --collection books --drop --type JSON --file $DATA_DIR/mongoBooks4305245223687744504.txt --uri $MONGODB_URI
+
+$MONGOIMPORT --collection accounts --drop --type JSON --file $DATA_DIR/mongoAccounts726970992639556812.txt --uri $MONGODB_URI
+
