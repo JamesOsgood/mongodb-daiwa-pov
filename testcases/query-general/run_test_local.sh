@@ -1,0 +1,1 @@
+. ./run_test.sh localhost:27017/lg
